@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GameView</title>
+</head>
+<body>
+    <img src="" , width="20", height="20", alt="err">
+    <label>I'm label</label>
+    <label>Other Label</label>
+    <script>
+        function addIconAndQuestionText()
+        {
+            var body = document.body;
+
+            var theDIV = document.createElement("div");
+            theDIV.id = "IconQuestion";
+            theDIV.className = "choiceContainer";
+            body.appendChild( theDIV );
+
+            var headIcon = document.createElement("img");
+            headIcon.src = "";
+            headIcon.width = 50;
+            headIcon.height = 50;
+            headIcon.alt = "无法加载";
+            headIcon.style.float = "left";
+            theDIV.appendChild(headIcon);
+            //可见性的相关设置
+            //headIcon.style.visibility = "visible";
+            //headIcon.style.visibility = "hidden";
+            //headIcon.style.visibility = "collapse";
+
+
+            var theQuestion = document.createElement("h1");
+            theQuestion.id = "TheQuestion";
+            theQuestion.textContent = "我是问题文本";
+            theQuestion.style.float = "left";
+            theDIV.appendChild(theQuestion);
+        }
+
+        addIconAndQuestionText();
+        theQuestion = document.getElementById("TheQuestion");
+        theQuestion.textContent = "30天真的能改变自己么？";
+
+
+
+        function addQuestionChoices()
+        {
+            var body = document.body;
+
+            var theDIV = document.createElement("div");
+            theDIV.id = "QuestionChoices";
+            theDIV.className = "choiceContainer";
+            //theDIV.style.color = "#CCC";
+            theDIV.style.backgroundColor = "#FFC";
+            theDIV.style.height = '450px';
+            theDIV.style.width = '450px';
+            theDIV.style.position = "absolute";
+            theDIV.style.left = "10px";
+            theDIV.style.top = "80px";
+            body.appendChild( theDIV );
+
+            var cb = document.createElement("button");
+            cb.type = "button";
+            cb.id = "choice1";
+            cb.style.position = 'absolute';
+            cb.style.fontFamily = 'Verdana, Geneva, sans-serif';
+            cb.style.width = 'auto';
+            cb.style.height = 'auto';
+            cb.style.top = '20px';
+            cb.style.left = '100px';
+            cb.textContent = "答案1";
+            theDIV.appendChild(cb);
+
+            var cb = document.createElement("button");
+            cb.type = "button";
+            cb.id = "choice2";
+            cb.style.position = 'absolute';
+            cb.style.fontFamily = 'Verdana, Geneva, sans-serif';
+            cb.style.width = 'auto';
+            cb.style.height = 'auto';
+            cb.style.top = '20px';
+            cb.style.left = '200px';
+            cb.textContent = "答案2";
+            theDIV.appendChild(cb);
+
+            var cb = document.createElement("button");
+            cb.type = "button";
+            cb.id = "choice3";
+            cb.style.position = 'absolute';
+            cb.style.fontFamily = 'Verdana, Geneva, sans-serif';
+            cb.style.width = 'auto';
+            cb.style.height = 'auto';
+            cb.style.top = '100px';
+            cb.style.left = '100px';
+            cb.textContent = "答案3";
+            theDIV.appendChild(cb);
+
+            var cb = document.createElement("button");
+            cb.type = "button";
+            cb.id = "choice4";
+            cb.style.position = 'absolute';
+            cb.style.fontFamily = 'Verdana, Geneva, sans-serif';
+            cb.style.width = 'auto';
+            cb.style.height = 'auto';
+            cb.style.top = '100px';
+            cb.style.left = '200px';
+            cb.textContent = "答案4";
+            theDIV.appendChild(cb);
+        }
+
+        addQuestionChoices();
+    </script>
+</body>
+</html>
