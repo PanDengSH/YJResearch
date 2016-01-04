@@ -11,9 +11,8 @@ NS_YuJian.questionGame.QuestionGameFacade = new Class({
 
     "initializeStart" : function()
     {
-
-
         this.questionGameView.initializeStart();
+        this.questionGameView.setupOneQuetion(this.questionProxy.questionList[0]);
     }
 
     //"questionGameView" : function()

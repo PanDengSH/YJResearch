@@ -61,7 +61,9 @@ QuestionList = [
     }
 ];
 
-;(function(root){
+window.onload = function()
+{
+    ;(function(root){
     alert("Application start");
 
     //console.log(root.QuestionList);
@@ -79,3 +81,5 @@ QuestionList = [
     //ggm.questionProxy.questionList[0].choices[0].setRight(true);
 
 })(this);
+}
+

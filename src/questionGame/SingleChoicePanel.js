@@ -23,7 +23,7 @@ NS_YuJian.questionGame.SingleChoicePanel = new Class({
 
             label = document.createElement("label");
             theChoices[i].appendChild(label);
-            label.textContent = "选项_" + i;
+            label.textContent = "s选项_" + i;
             label.id = "SingleChoiceLabel_"+i;
 
             radioButton = document.createElement("input");
@@ -60,9 +60,9 @@ NS_YuJian.questionGame.SingleChoicePanel = new Class({
 
             for(var i=0; i<theChoices.length; i++)
             {
-                document.getElementById("SingleChoiceLabel_"+i).textContent = "new选项_" + i;
+                document.getElementById("SingleChoiceLabel_"+i).textContent = "news选项_" + i;
             }
-        }
+        };
 
         this.addChoiceButton.onclick = function ()
         {
@@ -75,7 +75,7 @@ NS_YuJian.questionGame.SingleChoicePanel = new Class({
             theDIV.appendChild(commitButton);
             theDIV.appendChild(addChoiceButton);
             theDIV.appendChild(removeChoiceButton);
-        }
+        };
 
         this.removeChoiceButton.onclick = function ()
         {
@@ -84,7 +84,7 @@ NS_YuJian.questionGame.SingleChoicePanel = new Class({
             {
                 theDIV.removeChild(theChoices[i]);
             }
-        }
+        };
 
         //commitButton.addEventListener("click", function(){ alert("EVT commitButton"); }, false);
         //addChoiceButton.addEventListener("click", function(){ alert("EVT addChoiceButton"); }, false);

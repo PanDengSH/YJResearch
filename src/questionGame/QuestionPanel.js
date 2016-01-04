@@ -41,7 +41,7 @@ NS_YuJian.questionGame.QuestionPanel = new Class({
         this.headIcon.src = imgURL;
         this.updateQuestionText("30天真的可以改变自己吗？");
         //this.hide();
-        this.show();
+        //this.show();
     },
 
     "updateQuestionText" : function(qt)

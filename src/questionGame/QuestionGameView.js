@@ -55,8 +55,12 @@ NS_YuJian.questionGame.QuestionGameView = new Class({
         var ndiv = document.createElement("hr");
         body.appendChild(ndiv);
         body.appendChild(this.singleChoicePanel.theDIV);
+        ndiv = document.createElement("hr");
+        body.appendChild(ndiv);
+        body.appendChild(this.multiChoicePanel.theDIV);
 
-
+        ndiv = document.createElement("hr");
+        body.appendChild(ndiv);
         var hideSingle = document.createElement("button");
         hideSingle.innerText = "隐藏单选";
         body.appendChild(hideSingle);
@@ -64,6 +68,57 @@ NS_YuJian.questionGame.QuestionGameView = new Class({
         var showSingle = document.createElement("button");
         showSingle.innerText = "显示单选";
         body.appendChild(showSingle);
+
+        var hideMulti = document.createElement("button");
+        hideMulti.innerText = "隐藏多选";
+        body.appendChild(hideMulti);
+
+        var showMulti = document.createElement("button");
+        showMulti.innerText = "显示多选";
+        body.appendChild(showMulti);
+
+        var theQGV = window.ggm.qgf.questionGameView;
+        hideSingle.onclick = function ()
+        {
+            document.body.removeChild( document.getElementById("SingleChoicePanel_1") );
+        }
+        showSingle.onclick = function ()
+        {
+            document.body.appendChild( theQGV.singleChoicePanel.theDIV );
+        }
+        hideMulti.onclick = function ()
+        {
+            document.body.removeChild( document.getElementById("MultiChoicePanel_1") );
+        }
+        showMulti.onclick = function ()
+        {
+            document.body.appendChild( theQGV.multiChoicePanel.theDIV );
+        }
+
+        //document.body.removeChild(this.singleChoicePanel.theDIV);
+        //document.body.removeChild(this.multiChoicePanel.theDIV);
+    },
+
+    "setupOneQuetion" : function(vo)
+    {
+        this.questionPanel.updateQuestionText(vo.text);
+
+        if (vo.type == 0)
+        {
+            //this.singleChoicePanel
+        }
+        else if (vo.type == 1)
+        {
+            //this.multiChoicePanel
+        }
+
+        var choices = vo.choices;
+        for (var i=0; i<choices.length; i++)
+        {
+            //choices[i].text
+            //choices[i].isRight
+            //choices[i].correctness
+        }
     },
 
     "update" : function()
