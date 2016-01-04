@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f6d47b5-cda8-488b-92a2-b6b64c67418c" name="Default" comment="实现部分功能">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="5f6d47b5-cda8-488b-92a2-b6b64c67418c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ApplicationStart.js" afterPath="$PROJECT_DIR$/src/ApplicationStart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/questionGame/MultiChoicePanel.js" afterPath="$PROJECT_DIR$/src/questionGame/MultiChoicePanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/questionGame/QuestionGameFacade.js" afterPath="$PROJECT_DIR$/src/questionGame/QuestionGameFacade.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/questionGame/QuestionGameView.js" afterPath="$PROJECT_DIR$/src/questionGame/QuestionGameView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/questionGame/QuestionPanel.js" afterPath="$PROJECT_DIR$/src/questionGame/QuestionPanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/questionGame/SingleChoicePanel.js" afterPath="$PROJECT_DIR$/src/questionGame/SingleChoicePanel.js" />
     </list>
     <ignored path="YJResearch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,8 +50,8 @@
           <file leaf-file-name="SingleChoicePanel.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/questionGame/SingleChoicePanel.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.8103728">
-                  <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+                <state vertical-scroll-proportion="0.8071313">
+                  <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -844,12 +837,19 @@
       <workItem from="1451180513623" duration="11589000" />
       <workItem from="1451448972192" duration="11783000" />
       <workItem from="1451525319918" duration="23746000" />
-      <workItem from="1451871528838" duration="13180000" />
+      <workItem from="1451871528838" duration="13200000" />
     </task>
+    <task id="LOCAL-00001" summary="实现部分功能">
+      <created>1451892201972</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1451892201972</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148772000" />
+    <option name="totallyTimeSpent" value="148792000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1321,14 +1321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/questionGame/SingleChoicePanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8103728">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/questionGame/ChoiceVO.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1341,6 +1333,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.554295">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/questionGame/SingleChoicePanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8071313">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding />
         </state>
       </provider>
